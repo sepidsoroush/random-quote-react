@@ -12,17 +12,18 @@ function App() {
     <div className="App">
       <div id="wrapper">
         <div id="quote-box">
-          <div id="text">
-            <FontAwesomeIcon icon={faQuoteLeft} />
-            <p></p>
+          <div className="text-container">
+            <span><FontAwesomeIcon icon={faQuoteLeft} className="quote-left" /></span><span id="text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span>
           </div>          
-          <div id="author"></div>
-          <div className="button">
-            <div className="media">
-            <a href="twitter.com/intent/tweet" target="_blank" id="tweet-quote"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="" id="tmblr-quote"><FontAwesomeIcon icon={faTumblr} /></a>
+          <div className="author-container">
+            <span>- </span><span id="author">Lorem Ipsum</span>
+          </div>
+          <div className="button-container">
+            <div className='media'>
+              <a href="https://twitter.com/intent/tweet" target="_blank" className='button' id="tweet-quote"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="" target="_blank" id="tmblr-quote" className='button'><FontAwesomeIcon icon={faTumblr} /></a>
             </div>
-            <button id="new-quote">New quote</button>
+            <button id="new-quote" className='button'>New quote</button>
           </div>
         </div>
         <div className="footer">
