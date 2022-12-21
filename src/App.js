@@ -1,7 +1,8 @@
 import React , { useState }  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter , faTumblr} from '@fortawesome/free-brands-svg-icons'
+import { faTwitter , faTumblr} from '@fortawesome/free-brands-svg-icons';
+import "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js";
 import './App.css';
 const data = require("./data.json");
 
