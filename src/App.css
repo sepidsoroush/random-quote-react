@@ -51,6 +51,9 @@
     text-align: center;
     margin-right: 4px;
 }
+#tmblr-quote{
+    padding:10px 12px;
+}
 .button{
     padding: 10px;
     background-color: var(--main-color);
