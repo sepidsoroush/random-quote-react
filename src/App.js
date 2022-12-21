@@ -2,10 +2,10 @@ import React , { useState }  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter , faTumblr} from '@fortawesome/free-brands-svg-icons'
-
-
 import './App.css';
 const data = require("./data.json");
+
+//declare variables
 function App() {
   let text = "";
   let writer = '';
@@ -18,8 +18,9 @@ function App() {
   const [quote , setQuote] = useState(text);
   const [author , setAuthor] = useState(writer);
   const [ color , setColor] = useState("black");
+
     function GetQuote() {
-      //chnage quote
+      //change quote & author
       randomIndex = Math.floor(Math.random()*(data.quotes.length));
       randomQuote = data.quotes[randomIndex].quote;
       randomAuthor = data.quotes[randomIndex].author;
@@ -29,7 +30,6 @@ function App() {
       // change color
       randomColor = "#"+(Math.floor(Math.random()*16777215).toString(16));
       setColor(randomColor);
-
     }
 
   return (
